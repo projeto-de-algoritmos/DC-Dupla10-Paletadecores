@@ -14,9 +14,9 @@
 O projeto é uma paleta de cores, que tem como objetivo demostrar o funcionamento do algoritmo dividir e conquistar. No caso, a função ultilizada para criação do algoritmo foi mergeSort.
 
 ## Screenshots
-![imagem 1](/imagens/imagem1.png)
+![imagem 1](/imagens/imagem3.png)
 ![imagem 2](/imagens/imagem2.png)
-![imagem 3](/imagens/imagem3.png)
+![imagem 3](/imagens/imagem1.png)
 
 
 ## Instalação 
