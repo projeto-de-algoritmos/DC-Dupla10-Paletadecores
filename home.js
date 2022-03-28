@@ -1,8 +1,10 @@
 var values = [];
+//numero de linhas de cores da paleta
 var numLines = 2000;
 var sortHist = [];
 function setup() {
-  createCanvas(900, 600);
+  //define as dimensões dele em pixels.
+  createCanvas(900, 600, P2D);
   //Altera a maneira como o Processing interpreta os dados de cores.
   colorMode(HSB, height);
   for (i = 0; i < numLines; i++) {
