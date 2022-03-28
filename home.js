@@ -2,6 +2,7 @@ var values = [];
 //numero de linhas de cores da paleta
 var numLines = 2000;
 var sortHist = [];
+//A função setup() é executada uma vez, quando o programa é iniciado. Ele é usado para definir as propriedades iniciais do ambiente, como tamanho da tela, e para carregar mídia, como imagens e fontes, à medida que o programa é iniciado. 
 function setup() {
   //define as dimensões dele em pixels.
   createCanvas(900, 600, P2D);
@@ -12,22 +13,27 @@ function setup() {
   }
   sortHist = mergeSort(values);
   
+  
   frameRate(1);
 }
   
 var historyIndex = 0;
-// função para mostrar o grafico de cores na tela
+// Chamada diretamente após setup() , a função draw() executa continuamente as linhas de código contidas em seu bloco até que o programa seja interrompido ou noLoop()
 function draw() {
+  //define a cor usada para o plano de fundo da janela Processing
   background(15);
   for (i = 0; i < sortHist[historyIndex].length; i++) {
     let col = color(sortHist[historyIndex][i], height, height);
+    //Define a cor usada para desenhar linhas e bordas ao redor das formas
     stroke(col);
+    //Define a cor usada para preencher as formas
     fill(col);
     var location = map(i, 0, sortHist[historyIndex].length, 0, width);
     rect(location, height - sortHist[historyIndex][i], width/numLines, height);
   } 
   historyIndex++;
   if (historyIndex > sortHist.length -1){
+    //Interrompe o Processing de executar continuamente o código dentro do draw()
     noLoop();
   }
 }
