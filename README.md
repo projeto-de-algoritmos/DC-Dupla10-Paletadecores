@@ -18,6 +18,9 @@ O projeto é uma paleta de cores, que tem como objetivo demostrar o funcionament
 ![imagem 2](/imagens/imagem2.png)
 ![imagem 3](/imagens/imagem1.png)
 
+## Apresentação do projeto
+#### 1- [Video de apresentação do projeto Paleta de Cores via youtube](https://www.youtube.com/watch?v=ahqV6ONQ3NY)
+#### 2- [Video de apresentação do projeto Paleta de Cores via drive](https://drive.google.com/file/d/1dp_74csnTm89RWgf86cuoaPaQWTX-VEX/view?usp=sharing)
 
 ## Instalação 
 **Linguagem**: javascrpt, html<br>
